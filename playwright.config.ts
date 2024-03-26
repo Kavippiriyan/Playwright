@@ -1,6 +1,7 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 
 const config:PlaywrightTestConfig = {
-  testMatch:["tests/login.test.ts"]
+  // testMatch:["tests/login.test.ts","tests/fb.test.ts"]
+  testMatch:["tests/fb.test.ts"]
 };
 export default config;
