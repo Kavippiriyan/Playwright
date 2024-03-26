@@ -67,7 +67,7 @@
       "specs": [
         {
           "title": "",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,52 +79,24 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 1624,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('input[id=\\'email\\']')\nExpected string: \u001b[32m\"Email address or phone number\u001b[7ms\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"Email address or phone number\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('input[id=\\'email\\']')\u001b[22m\n\u001b[2m  -   locator resolved to <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/>\u001b[22m\n\u001b[2m  -   unexpected value \"Email address or phone number\"\u001b[22m\n\u001b[2m  -   locator resolved to <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/>\u001b[22m\n\u001b[2m  -   unexpected value \"Email address or phone number\"\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('input[id=\\'email\\']')\nExpected string: \u001b[32m\"Email address or phone number\u001b[7ms\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"Email address or phone number\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('input[id=\\'email\\']')\u001b[22m\n\u001b[2m  -   locator resolved to <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/>\u001b[22m\n\u001b[2m  -   unexpected value \"Email address or phone number\"\u001b[22m\n\u001b[2m  -   locator resolved to <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/>\u001b[22m\n\u001b[2m  -   unexpected value \"Email address or phone number\"\u001b[22m\n\n    at C:\\playwright\\tests\\Assertion.test.ts:13:19",
-                    "location": {
-                      "file": "C:\\playwright\\tests\\Assertion.test.ts",
-                      "column": 19,
-                      "line": 13
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[90m// expect(input).toHaveAttribute(\"placeholder\",\"Email address or phone number\")\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(input)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"placeholder\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Email address or phone numbers\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 6674,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "C:\\playwright\\tests\\Assertion.test.ts",
-                        "column": 19,
-                        "line": 13
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('input[id=\\'email\\']')\nExpected string: \u001b[32m\"Email address or phone number\u001b[7ms\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"Email address or phone number\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveAttribute with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('input[id=\\'email\\']')\u001b[22m\n\u001b[2m  -   locator resolved to <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/>\u001b[22m\n\u001b[2m  -   unexpected value \"Email address or phone number\"\u001b[22m\n\u001b[2m  -   locator resolved to <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/>\u001b[22m\n\u001b[2m  -   unexpected value \"Email address or phone number\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[90m// expect(input).toHaveAttribute(\"placeholder\",\"Email address or phone number\")\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     expect(input)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"placeholder\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"Email address or phone numbers\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m })\u001b[0m\n\n\u001b[2m    at C:\\playwright\\tests\\Assertion.test.ts:13:19\u001b[22m"
+                      "text": "Before enter the value :  \n"
+                    },
+                    {
+                      "text": "After enter the value:  9025564644\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-26T10:54:00.992Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-Assertion-\\video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-Assertion-\\test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\playwright\\tests\\Assertion.test.ts",
-                    "column": 19,
-                    "line": 13
-                  }
+                  "startTime": "2024-03-26T11:38:43.041Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "0145556a736d8bac4db6-3aaae2c84ec65ffc6b61",
@@ -137,11 +109,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-26T10:54:00.206Z",
-    "duration": 4423.406999999999,
-    "expected": 0,
+    "startTime": "2024-03-26T11:38:42.321Z",
+    "duration": 8183.615999999999,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
