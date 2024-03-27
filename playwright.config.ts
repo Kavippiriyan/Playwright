@@ -12,13 +12,13 @@ const config: PlaywrightTestConfig = {
   use:
   {
     headless: false,
-    screenshot: "only-on-failure",
-    video: "retain-on-failure"
+    screenshot: "on",
+    video: "on"
   },
   // retries: 2,
   retries: 0,
   reporter: [["dot"], ["json", {
     outputFile: "Json_Report/jsonReport.json"
-  }], ["html", { open: "always" }]]
+  }], ["html", { open: "on-failure" }]]
 };
 export default config;

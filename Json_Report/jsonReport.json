@@ -28,7 +28,7 @@
       [
         "html",
         {
-          "open": "always"
+          "open": "on-failure"
         }
       ]
     ],
@@ -66,8 +66,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "dropdown",
-          "ok": false,
+          "title": "Multiple dropdown",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,49 +79,33 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30010,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\playwright\\tests\\dropdown.test.ts",
-                        "column": 16,
-                        "line": 10
-                      },
-                      "message": "Error: page.selectOption: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('#select')\u001b[22m\n\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mselectOption(\u001b[32m\"#select\"\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 |\u001b[39m     {\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m         label\u001b[33m:\u001b[39m\u001b[32m\"India\"\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m     })\u001b[0m\n\n\u001b[2m    at C:\\playwright\\tests\\dropdown.test.ts:10:16\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 9912,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-27T10:37:56.656Z",
+                  "startTime": "2024-03-27T12:24:03.133Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-dropdown-dropdown\\test-failed-1.png"
+                      "path": "C:\\playwright\\test-results\\tests-dropdown-Multiple-dropdown\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-dropdown-dropdown\\video.webm"
+                      "path": "C:\\playwright\\test-results\\tests-dropdown-Multiple-dropdown\\video.webm"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "6a3d7e996dd4874286aa-7f926d105829b1d91452",
+          "id": "6a3d7e996dd4874286aa-eb1b959403a7ecf12661",
           "file": "tests/dropdown.test.ts",
-          "line": 6,
+          "line": 19,
           "column": 5
         }
       ]
@@ -129,11 +113,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-27T10:37:55.942Z",
-    "duration": 34136.155,
-    "expected": 0,
+    "startTime": "2024-03-27T12:24:02.539Z",
+    "duration": 11171.992,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
