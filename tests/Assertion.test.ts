@@ -47,7 +47,7 @@ test("", async ({ page }) => {
     await page.waitForTimeout(5000);
 
     let number1 = 5
-    let number2 = 5
+    let number2 = 4
     let expect_result = number1 + number2
 
     expect(value).toHaveText("" + expect_result)
