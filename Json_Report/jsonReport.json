@@ -28,7 +28,7 @@
       [
         "html",
         {
-          "open": "on-failure"
+          "open": "never"
         }
       ]
     ],
@@ -67,7 +67,7 @@
       "specs": [
         {
           "title": "Multiple dropdown",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,13 +79,21 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 9912,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 30000,
+                  "error": {
+                    "message": "\u001b[31mTest finished within timeout of 30000ms, but tearing down \"context\" ran out of time.\u001b[39m\n\u001b[31mPlease allow more time for the test, since teardown is attributed towards the test timeout budget.\u001b[39m",
+                    "stack": "\u001b[31mTest finished within timeout of 30000ms, but tearing down \"context\" ran out of time.\u001b[39m\n\u001b[31mPlease allow more time for the test, since teardown is attributed towards the test timeout budget.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest finished within timeout of 30000ms, but tearing down \"context\" ran out of time.\u001b[39m\n\u001b[31mPlease allow more time for the test, since teardown is attributed towards the test timeout budget.\u001b[39m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-27T12:24:03.133Z",
+                  "startTime": "2024-03-27T12:51:50.200Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -100,7 +108,7 @@
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "6a3d7e996dd4874286aa-eb1b959403a7ecf12661",
@@ -113,11 +121,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-27T12:24:02.539Z",
-    "duration": 11171.992,
-    "expected": 1,
+    "startTime": "2024-03-27T12:51:49.603Z",
+    "duration": 31531.644,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

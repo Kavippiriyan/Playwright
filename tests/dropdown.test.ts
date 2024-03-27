@@ -14,21 +14,20 @@ import { test } from "@playwright/test"
 //     await page.waitForTimeout(15000);
 // });
 
-// doubt*************
 
 // test("Multiple dropdown", async ({ page }) => {
-//     await page.goto("https://formstone.it/components/dropdown/demo/");
+//     await page.goto("https://demoqa.com/select-menu");
 
 
-//     await page.selectOption("#demo_multiple", [{
-//         value: "1"
+//     await page.selectOption("#cars", [{
+//         value: "audi"
 //     },
 //     {
-//         value: "2"
+//         label: "Volvo"
 //     },
 //     {
-//         value: "3"
+//         index: 2
 //     }]
 //     )
-//     await page.waitForTimeout(5000);
+//     await page.waitForTimeout(15000);
 // });
