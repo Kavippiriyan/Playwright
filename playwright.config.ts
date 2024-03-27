@@ -6,7 +6,8 @@ const config: PlaywrightTestConfig = {
   // testMatch:["tests/flipkart.test.ts"],
   // testMatch: ["tests/records.test.ts"],
   // testMatch: ["tests/Assertion.test.ts"],
-  testMatch:["tests/checkbox.test.ts"],
+  // testMatch:["tests/checkbox.test.ts"],
+  testMatch: ["tests/alert.test.ts"],
   use:
   {
     headless: false,
