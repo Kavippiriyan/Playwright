@@ -66,8 +66,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "iframe",
-          "ok": true,
+          "title": "inner_frame",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,37 +79,49 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 24961,
-                  "errors": [],
-                  "stdout": [
+                  "status": "timedOut",
+                  "duration": 30004,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
                     {
-                      "text": "\u001b[33m12\u001b[39m\n"
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\playwright\\tests\\frames.test.ts",
+                        "column": 48,
+                        "line": 33
+                      },
+                      "message": "Error: locator.check: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for frameLocator('//iframe[@src=\\'https://docs.google.com/forms/d/1yfUq-GO9BEssafd6TvHhf0D6QLDVG3q5InwNE2FFFFQ/viewform?embedded=true\\']').locator('//label[@for=\\'i19\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m     \u001b[36mawait\u001b[39m frame\u001b[33m.\u001b[39mlocator(\u001b[32m\"//label[@for='i19']\"\u001b[39m)\u001b[33m.\u001b[39mcheck()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mlet\u001b[39m checkbox \u001b[33m=\u001b[39m frame\u001b[33m.\u001b[39mlocator(\u001b[32m\"//label[@for='i19']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 35 |\u001b[39m     expect(checkbox)\u001b[33m.\u001b[39mtoBeChecked()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\playwright\\tests\\frames.test.ts:33:48\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-28T06:44:43.149Z",
+                  "startTime": "2024-03-28T09:49:12.976Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-frames-iframe\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\tests-frames-inner-frame\\test-failed-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-frames-iframe\\video.webm"
+                      "path": "C:\\playwright\\test-results\\tests-frames-inner-frame\\video.webm"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "ee77907c2abffffa1fe6-ed058bd6c86f6f4ae736",
+          "id": "ee77907c2abffffa1fe6-d049c7e2dbddc292f9ba",
           "file": "tests/frames.test.ts",
-          "line": 4,
+          "line": 26,
           "column": 5
         }
       ]
@@ -117,11 +129,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-28T06:44:42.226Z",
-    "duration": 30909.437,
-    "expected": 1,
+    "startTime": "2024-03-28T09:49:12.237Z",
+    "duration": 33052.172000000006,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
