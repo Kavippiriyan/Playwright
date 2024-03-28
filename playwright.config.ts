@@ -9,7 +9,8 @@ const config: PlaywrightTestConfig = {
   // testMatch:["tests/checkbox.test.ts"],
   // testMatch: ["tests/alert.test.ts"],
   // testMatch: ["tests/dropdown.test.ts"],
-  testMatch: ["tests/frames.test.ts"],
+  // testMatch: ["tests/frames.test.ts"],
+  testMatch: ["tests/windowhandling.test.ts"],
   use:
   {
     headless: false,
