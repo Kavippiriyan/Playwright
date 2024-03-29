@@ -47,7 +47,7 @@
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/windowhandling.test.ts"
+          "tests/calender.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\windowhandling.test.ts",
-      "file": "tests/windowhandling.test.ts",
+      "title": "tests\\calender.test.ts",
+      "file": "tests/calender.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "multiple_window_handle",
+          "title": "calender handling using moment",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,53 +80,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9519,
+                  "duration": 15118,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "https://www.hyrtutorials.com/p/window-handles-practice.html\n"
-                    },
-                    {
-                      "text": "no_of_windows:  \u001b[33m2\u001b[39m\n"
-                    },
-                    {
-                      "text": "https://www.hyrtutorials.com/p/window-handles-practice.html\n"
-                    },
-                    {
-                      "text": "https://www.hyrtutorials.com/p/basic-controls.html\n"
-                    },
-                    {
-                      "text": "Enter First Name\n"
+                      "text": "D.O.B :  9  -  October  -  2024\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-29T03:50:15.709Z",
+                  "startTime": "2024-03-29T07:42:18.192Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-windowhandling-multiple-window-handle\\test-finished-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-windowhandling-multiple-window-handle\\test-finished-2.png"
+                      "path": "C:\\playwright\\test-results\\tests-calender-calender-handling-using-moment\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-windowhandling-multiple-window-handle\\video.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-windowhandling-multiple-window-handle\\video-2.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-windowhandling-multiple-window-handle\\video-1.webm"
+                      "path": "C:\\playwright\\test-results\\tests-calender-calender-handling-using-moment\\video.webm"
                     }
                   ]
                 }
@@ -134,9 +107,9 @@
               "status": "expected"
             }
           ],
-          "id": "e4bb73524fb88b14eff5-4dd25c336d236119bad1",
-          "file": "tests/windowhandling.test.ts",
-          "line": 23,
+          "id": "8b6b781e32c609f075b7-839ade5068aa96fe701b",
+          "file": "tests/calender.test.ts",
+          "line": 11,
           "column": 5
         }
       ]
@@ -144,8 +117,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-29T03:50:14.933Z",
-    "duration": 11515.392,
+    "startTime": "2024-03-29T07:42:17.444Z",
+    "duration": 17302.088,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

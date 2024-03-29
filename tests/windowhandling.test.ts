@@ -60,8 +60,6 @@ test("multiple_window_handle", async ({ page }) => {
         let text = await first_window.locator("input[id='firstName']").getAttribute("placeholder")
         console.log(text);
 
-
-
     }
 
     if (second_window) {
