@@ -11,7 +11,8 @@ const config: PlaywrightTestConfig = {
   // testMatch: ["tests/dropdown.test.ts"],
   // testMatch: ["tests/frames.test.ts"],
   // testMatch: ["tests/windowhandling.test.ts"],
-  testMatch: ["tests/calender.test.ts"],
+  // testMatch: ["tests/calender.test.ts"],
+  testMatch: ["tests/upload_download.test.ts"],
   use:
   {
     headless: false,

@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 1
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -45,7 +47,7 @@
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/calender.test.ts"
+          "tests/upload_download.test.ts"
         ],
         "timeout": 30000
       }
@@ -56,12 +58,68 @@
     "workers": 2,
     "webServer": null
   },
-  "suites": [],
+  "suites": [
+    {
+      "title": "tests\\upload_download.test.ts",
+      "file": "tests/upload_download.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "download files",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 10398,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "C:\\Users\\admin\\AppData\\Local\\Temp\\playwright-artifacts-EYoWYE\\f6570255-7305-4b4e-93a2-8acb9c5c9f14\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-03-29T13:36:49.105Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\playwright\\test-results\\tests-upload_download-download-files\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\playwright\\test-results\\tests-upload_download-download-files\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "969bb2f3cfa090ad21ba-edde2acb24e0b703ddd9",
+          "file": "tests/upload_download.test.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-29T12:33:55.338Z",
-    "duration": 8877.256000000001,
-    "expected": 0,
+    "startTime": "2024-03-29T13:36:48.509Z",
+    "duration": 11694.323,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
