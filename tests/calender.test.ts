@@ -90,70 +90,69 @@ import moment from "moment";
 // })
 
 
-test("Using moment", async ({ page }) => {
-    await page.goto("https://www.hyrtutorials.com/p/calendar-practice.html")
+// test("Using moment", async ({ page }) => {
+//     await page.goto("https://www.hyrtutorials.com/p/calendar-practice.html")
 
-    await page.waitForTimeout(2000);
-    await page.click("//img[@class='ui-datepicker-trigger']");
+//     await page.waitForTimeout(2000);
+//     await page.click("//img[@class='ui-datepicker-trigger']");
 
-    let next = await page.locator("'Next'")
-    let prev = page.locator("//span[text()='Prev']");
+//     let next = await page.locator("'Next'")
+//     let prev = page.locator("//span[text()='Prev']");
 
-    let current_year = await page.locator("//span[@class='ui-datepicker-year']");
-    let this_year_textContent = await current_year.textContent();
-    console.log(this_year_textContent);
-
-
-
-    let year_to_select = "2022"
-
-    let thisyear = moment(year_to_select, "YYYY").isBefore();
-    console.log(thisyear);
-
-    let month_to_select = "March"
-    let thismonth = moment(month_to_select, "MMMM").isAfter();
-    console.log(thismonth);
-    let current_month = await page.locator("//span[@class='ui-datepicker-month']");
-    let this_month_textContent = await current_month.textContent();
-
-    while (true) {
-
-        if (this_year_textContent != year_to_select) {
-            if (thisyear) {
-
-                await prev.click();
-                this_year_textContent = await page.locator("//span[@class='ui-datepicker-year']").textContent()
-
-            }
-            else {
-
-                await next.click();
-                this_year_textContent = await page.locator("//span[@class='ui-datepicker-year']").textContent()
-
-
-            }
-        }
-
-        else {
-
-            while (await this_month_textContent != 'October') {
-                if (thismonth) {
-
-                    await prev.click();
-                }
-                else {
-
-                    await prev.click();
-                }
-                this_month_textContent = await page.locator("//span[@class='ui-datepicker-month']").textContent()
-
-            }
-        }
-
-    }
+//     let current_year = await page.locator("//span[@class='ui-datepicker-year']");
+//     let this_year_textContent = await current_year.textContent();
+//     console.log(this_year_textContent);
 
 
 
+//     let year_to_select = "2022"
 
-}
-)
+//     let thisyear = moment(year_to_select, "YYYY").isBefore();
+//     console.log(thisyear);
+
+//     let month_to_select = "April"
+//     let thismonth = moment(month_to_select, "MMMM").isAfter();
+//     console.log(thismonth);
+//     let current_month = await page.locator("//span[@class='ui-datepicker-month']");
+//     let this_month_textContent = await current_month.textContent();
+
+//     while (true) {
+
+//         if (this_year_textContent != year_to_select) {
+//             if (thisyear) {
+
+//                 await prev.click();
+//                 this_year_textContent = await page.locator("//span[@class='ui-datepicker-year']").textContent()
+
+//             }
+//             else {
+
+//                 await next.click();
+//                 this_year_textContent = await page.locator("//span[@class='ui-datepicker-year']").textContent()
+
+
+//             }
+//         }
+
+//         else {
+
+//             while (await this_month_textContent != 'April') {
+//                 if (thismonth) {
+
+//                     await prev.click();
+//                 }
+//                 else {
+
+//                     await prev.click();
+//                 }
+//                 this_month_textContent = await page.locator("//span[@class='ui-datepicker-month']").textContent()
+
+//             }
+//         }
+//         console.log("hi");
+//     }
+
+
+// }
+// )
+
