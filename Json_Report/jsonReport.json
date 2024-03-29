@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "calender handling using moment",
+          "title": "calender handling",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,26 +80,29 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 15118,
+                  "duration": 17965,
                   "errors": [],
                   "stdout": [
+                    {
+                      "text": "March\n"
+                    },
                     {
                       "text": "D.O.B :  9  -  October  -  2024\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-29T07:42:18.192Z",
+                  "startTime": "2024-03-29T10:24:16.822Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-calender-calender-handling-using-moment\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\tests-calender-calender-handling\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-calender-calender-handling-using-moment\\video.webm"
+                      "path": "C:\\playwright\\test-results\\tests-calender-calender-handling\\video.webm"
                     }
                   ]
                 }
@@ -107,9 +110,9 @@
               "status": "expected"
             }
           ],
-          "id": "8b6b781e32c609f075b7-839ade5068aa96fe701b",
+          "id": "8b6b781e32c609f075b7-96d45db85f5d5923e369",
           "file": "tests/calender.test.ts",
-          "line": 11,
+          "line": 47,
           "column": 5
         }
       ]
@@ -117,8 +120,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-29T07:42:17.444Z",
-    "duration": 17302.088,
+    "startTime": "2024-03-29T10:24:16.106Z",
+    "duration": 19325.773,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
