@@ -47,7 +47,7 @@
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/upload_download.test.ts"
+          "pomtest/Shopnow.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\upload_download.test.ts",
-      "file": "tests/upload_download.test.ts",
+      "title": "pomtest\\Shopnow.test.ts",
+      "file": "pomtest/Shopnow.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "upload files",
+          "title": "test2",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,26 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5108,
+                  "duration": 12082,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-30T05:45:40.275Z",
+                  "startTime": "2024-03-30T10:39:27.197Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-upload_download-upload-files\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test2\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\tests-upload_download-upload-files\\video.webm"
+                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test2\\video.webm"
                     }
                   ]
                 }
@@ -107,8 +103,8 @@
               "status": "expected"
             }
           ],
-          "id": "969bb2f3cfa090ad21ba-f05eaa5d9b2d9dfc8b14",
-          "file": "tests/upload_download.test.ts",
+          "id": "a902d4fd4462cab5b259-b01e0d1bb568c1f8c47a",
+          "file": "pomtest/Shopnow.test.ts",
           "line": 28,
           "column": 5
         }
@@ -117,8 +113,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-30T05:45:39.473Z",
-    "duration": 6778.497,
+    "startTime": "2024-03-30T10:39:26.451Z",
+    "duration": 13700.5,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

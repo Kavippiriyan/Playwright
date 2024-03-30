@@ -12,12 +12,34 @@ const config: PlaywrightTestConfig = {
   // testMatch: ["tests/frames.test.ts"],
   // testMatch: ["tests/windowhandling.test.ts"],
   // testMatch: ["tests/calender.test.ts"],
-  testMatch: ["tests/upload_download.test.ts"],
+  //   testMatch: ["tests/upload_download.test.ts"],
+  //   use:
+  //   {
+  //     headless: false,
+  //     screenshot: "on",
+  //     video: "on"
+  //   },
+  //   // retries: 2,
+  //   retries: 0,
+  //   reporter: [["dot"], ["json", {
+  //     outputFile: "Json_Report/jsonReport.json"
+  //   }], ["html", { open: "never" }]]
+  // };
+  // export default config;
+
+
+  // for page object model
+
+  testMatch: ["pomtest/Shopnow.test.ts"],
   use:
   {
+    baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
     headless: false,
     screenshot: "on",
-    video: "on"
+    video: "on",
+    launchOptions: {
+
+    }
   },
   // retries: 2,
   retries: 0,
