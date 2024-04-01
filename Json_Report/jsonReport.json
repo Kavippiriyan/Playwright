@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "test2",
+          "title": "test3",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,22 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12082,
+                  "duration": 19868,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-30T10:39:27.197Z",
+                  "startTime": "2024-04-01T06:15:58.010Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test2\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test3\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test2\\video.webm"
+                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test3\\video.webm"
                     }
                   ]
                 }
@@ -103,9 +103,9 @@
               "status": "expected"
             }
           ],
-          "id": "a902d4fd4462cab5b259-b01e0d1bb568c1f8c47a",
+          "id": "a902d4fd4462cab5b259-e3082b319ae171b8f718",
           "file": "pomtest/Shopnow.test.ts",
-          "line": 28,
+          "line": 39,
           "column": 5
         }
       ]
@@ -113,8 +113,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-30T10:39:26.451Z",
-    "duration": 13700.5,
+    "startTime": "2024-04-01T06:15:57.278Z",
+    "duration": 21405.462,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

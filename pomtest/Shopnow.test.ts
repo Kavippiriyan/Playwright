@@ -10,7 +10,7 @@ import Special_page from "../PageObjectModel/special_page.test"
 const Email = "kavi123@gmail.com"
 const Password = "password"
 
-// test("test1", async ({ page, baseURL }) => {
+// test("test1 Register", async ({ page, baseURL }) => {
 //     const register = new Register(page);
 //     await page.goto(`${baseURL}route=account/register`)
 //     await register.firstname("Kavippiriyan")
@@ -25,12 +25,25 @@ const Password = "password"
 // }
 // )
 
-test("test2", async ({ page, baseURL }) => {
-    const login = new Login(page);
+// test("test2 Login", async ({ page, baseURL }) => {
+//     const login = new Login(page);
 
+//     await page.goto(`${baseURL}route=account/login`)
+//     await login.Email(Email);
+//     await login.Password(Password)
+//     await login.loginbutton();
+//     expect(await page.title()).toBe("My Account")
+
+// })
+
+test("test3", async ({ page, baseURL }) => {
+    const login = new Login(page);
+    const home = new Home(page)
+    const specialpage = new Special_page(page)
     await page.goto(`${baseURL}route=account/login`)
-    await login.Email(Email);
-    await login.Password(Password)
-    await login.loginbutton();
+    await login.login(Email, Password);
+    await home.special_page()
+    await specialpage.continue_shopnow();
+    await specialpage.shopnow();
 
 })

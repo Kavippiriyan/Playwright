@@ -12,6 +12,6 @@ export default class Special_page {
     }
 
     async shopnow() {
-        await this.page.click(("//a[text()='SHOP NOW'])[1]"))
+        await this.page.click(("//a[@class='btn btn-lg btn-outline-primary ml-lg-auto flex-shrink-0']"))
     }
 }

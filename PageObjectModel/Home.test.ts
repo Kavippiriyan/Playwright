@@ -8,6 +8,7 @@ export default class Home {
 
 
     async special_page() {
-        await this.page.click("(//span[text()='Hot'])[1]")
+        const special = await this.page.locator("(//a[@href='https://ecommerce-playground.lambdatest.io/index.php?route=product/special'])[2]");
+        await special.click()
     }
 }
