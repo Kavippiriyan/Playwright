@@ -1,6 +1,5 @@
 import { test as basetest } from "@playwright/test"
 
-import Regiser from "../PageObjectModel/Register.test"
 import Login from "../PageObjectModel/login.test"
 import Home from "../PageObjectModel/Home.test"
 import special_page from "../PageObjectModel/special_page.test"

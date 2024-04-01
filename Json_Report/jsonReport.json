@@ -47,7 +47,7 @@
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "pomtest/Shopnow.test.ts"
+          "pomtest/shopnowusingJSON.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,8 +60,8 @@
   },
   "suites": [
     {
-      "title": "pomtest\\Shopnow.test.ts",
-      "file": "pomtest/Shopnow.test.ts",
+      "title": "pomtest\\shopnowusingJSON.test.ts",
+      "file": "pomtest/shopnowusingJSON.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
@@ -80,22 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 17548,
+                  "duration": 14669,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-01T09:28:24.085Z",
+                  "startTime": "2024-04-01T10:33:03.968Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test1-Register\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test1-Register\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test1-Register\\video.webm"
+                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test1-Register\\video.webm"
                     }
                   ]
                 }
@@ -103,9 +103,9 @@
               "status": "expected"
             }
           ],
-          "id": "a902d4fd4462cab5b259-7d43021eb025d3c83db9",
-          "file": "pomtest/Shopnow.test.ts",
-          "line": 14,
+          "id": "f3d8c666708db12e5d3c-e0cb7b9bead7e316f922",
+          "file": "pomtest/shopnowusingJSON.test.ts",
+          "line": 11,
           "column": 5
         },
         {
@@ -123,17 +123,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 13738,
+                  "duration": 10055,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-01T09:28:43.836Z",
+                  "startTime": "2024-04-01T10:33:18.940Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test2-Login\\test-finished-1.png"
+                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test2-Login\\video.webm"
+                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test2-Login\\video.webm"
                     }
                   ]
                 }
@@ -141,9 +146,9 @@
               "status": "expected"
             }
           ],
-          "id": "a902d4fd4462cab5b259-6b56d437a870fd35e315",
-          "file": "pomtest/Shopnow.test.ts",
-          "line": 43,
+          "id": "f3d8c666708db12e5d3c-0fc12e3cbd816c114b4a",
+          "file": "pomtest/shopnowusingJSON.test.ts",
+          "line": 31,
           "column": 5
         },
         {
@@ -161,22 +166,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 24287,
+                  "duration": 27767,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-01T09:28:57.576Z",
+                  "startTime": "2024-04-01T10:33:28.997Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test3\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test3\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnow-test3\\video.webm"
+                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test3\\video.webm"
                     }
                   ]
                 }
@@ -184,9 +189,9 @@
               "status": "expected"
             }
           ],
-          "id": "a902d4fd4462cab5b259-e3082b319ae171b8f718",
-          "file": "pomtest/Shopnow.test.ts",
-          "line": 62,
+          "id": "f3d8c666708db12e5d3c-540825dfedcb6b2c9b21",
+          "file": "pomtest/shopnowusingJSON.test.ts",
+          "line": 44,
           "column": 5
         }
       ]
@@ -194,8 +199,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-01T09:28:23.352Z",
-    "duration": 59132.816,
+    "startTime": "2024-04-01T10:33:03.182Z",
+    "duration": 53849.826,
     "expected": 3,
     "skipped": 0,
     "unexpected": 0,
