@@ -1,6 +1,27 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
 
+import { devices } from "@playwright/test"
+
 const config: PlaywrightTestConfig = {
+
+
+  projects: [
+    {
+      name: "chrome",
+      use: {
+        ...devices["Desktop Chrome"]
+      }
+    },
+     {
+      name:"firefox",
+      use:
+      {
+        ...devices["Desktop Firefox"]
+      }
+     },
+  ],
+
+
   // testMatch:["tests/login.test.ts","tests/fb.test.ts"]
   // testMatch:["tests/fb.test.ts"],
   // testMatch:["tests/flipkart.test.ts"],
@@ -43,6 +64,7 @@ const config: PlaywrightTestConfig = {
 
     }
   },
+  timeout: 60 * 1000 * 5,
   // retries: 2,
   retries: 0,
   reporter: [["dot"], ["json", {

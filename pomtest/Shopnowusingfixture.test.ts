@@ -4,7 +4,6 @@ import { expect, test } from "../base/pomfixture"
 
 
 
-
 const Email = "kavi123@gmail.com"
 const Password = "password"
 
