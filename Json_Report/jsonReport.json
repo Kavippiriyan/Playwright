@@ -47,7 +47,8 @@
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "pomtest/shopnowusingJSON.test.ts"
+          "tests/login.test.ts",
+          "tests/fb.test.ts"
         ],
         "timeout": 300000
       },
@@ -60,7 +61,8 @@
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "pomtest/shopnowusingJSON.test.ts"
+          "tests/login.test.ts",
+          "tests/fb.test.ts"
         ],
         "timeout": 300000
       }
@@ -73,13 +75,13 @@
   },
   "suites": [
     {
-      "title": "pomtest\\shopnowusingJSON.test.ts",
-      "file": "pomtest/shopnowusingJSON.test.ts",
+      "title": "tests\\fb.test.ts",
+      "file": "tests/fb.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test1 Register",
+          "title": "fb login",
           "ok": true,
           "tags": [],
           "tests": [
@@ -92,118 +94,23 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "interrupted",
-                  "duration": 11580,
-                  "error": {
-                    "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n\n    at C:\\playwright\\pomtest\\shopnowusingJSON.test.ts:18:16",
-                    "location": {
-                      "file": "C:\\playwright\\pomtest\\shopnowusingJSON.test.ts",
-                      "column": 16,
-                      "line": 18
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/register`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mfirstname(data\u001b[33m.\u001b[39mfirstname)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mlastname(data\u001b[33m.\u001b[39mlastname)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39m\u001b[33mEmail\u001b[39m(data\u001b[33m.\u001b[39memail)\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\playwright\\pomtest\\shopnowusingJSON.test.ts",
-                        "column": 16,
-                        "line": 18
-                      },
-                      "message": "Error: page.goto: Test ended.\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/register`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mfirstname(data\u001b[33m.\u001b[39mfirstname)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mlastname(data\u001b[33m.\u001b[39mlastname)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39m\u001b[33mEmail\u001b[39m(data\u001b[33m.\u001b[39memail)\u001b[0m\n\n\u001b[2m    at C:\\playwright\\pomtest\\shopnowusingJSON.test.ts:18:16\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 17761,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-01T11:55:16.416Z",
+                  "startTime": "2024-04-01T12:01:29.518Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test1-Register-chrome\\test-failed-1.png"
+                      "path": "C:\\playwright\\test-results\\tests-fb-fb-login-chrome\\test-finished-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\playwright\\pomtest\\shopnowusingJSON.test.ts",
-                    "column": 16,
-                    "line": 18
-                  }
+                  ]
                 }
               ],
-              "status": "skipped"
-            },
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "failed",
-                  "duration": 5654,
-                  "error": {
-                    "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n\n    at C:\\playwright\\pomtest\\shopnowusingJSON.test.ts:18:16",
-                    "location": {
-                      "file": "C:\\playwright\\pomtest\\shopnowusingJSON.test.ts",
-                      "column": 16,
-                      "line": 18
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/register`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mfirstname(data\u001b[33m.\u001b[39mfirstname)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mlastname(data\u001b[33m.\u001b[39mlastname)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39m\u001b[33mEmail\u001b[39m(data\u001b[33m.\u001b[39memail)\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\playwright\\pomtest\\shopnowusingJSON.test.ts",
-                        "column": 16,
-                        "line": 18
-                      },
-                      "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://ecommerce-playground.lambdatest.io/index.php?route=account/register\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 16 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}route=account/register`\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mfirstname(data\u001b[33m.\u001b[39mfirstname)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39mlastname(data\u001b[33m.\u001b[39mlastname)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m registerpage\u001b[33m.\u001b[39m\u001b[33mEmail\u001b[39m(data\u001b[33m.\u001b[39memail)\u001b[0m\n\n\u001b[2m    at C:\\playwright\\pomtest\\shopnowusingJSON.test.ts:18:16\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-01T11:55:16.422Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\pomtest-shopnowusingJSON-test1-Register-firefox\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\playwright\\pomtest\\shopnowusingJSON.test.ts",
-                    "column": 16,
-                    "line": 18
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "f3d8c666708db12e5d3c-5ba47a3c4a4234bf34e2",
-          "file": "pomtest/shopnowusingJSON.test.ts",
-          "line": 15,
-          "column": 5
-        },
-        {
-          "title": "test2 Login",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chrome",
-              "projectName": "chrome",
-              "results": [],
-              "status": "skipped"
+              "status": "expected"
             },
             {
               "timeout": 300000,
@@ -214,34 +121,40 @@
               "results": [
                 {
                   "workerIndex": 2,
-                  "status": "interrupted",
-                  "duration": 42,
-                  "error": {
-                    "message": "Error: browser.newContext: Test ended.\nBrowser logs:\n\n<launching> C:\\Users\\admin\\AppData\\Local\\ms-playwright\\firefox-1440\\firefox\\firefox.exe -no-remote -wait-for-browser -foreground -profile C:\\Users\\admin\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-tGpG6i -juggler-pipe -silent\n<launched> pid=2352\n[pid=2352][out] console.warn: services.settings: Ignoring preference override of remote settings server\n[pid=2352][out] console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment\n[pid=2352][out] console.error: ({})\n[pid=2352][out] \n[pid=2352][out] Juggler listening to the pipe\n[pid=2352][out] console.error: \"Warning: unrecognized command line flag\" \"-foreground\"\n[pid=2352] <gracefully close start>\n[pid=2352] <process did exit: exitCode=3221225786, signal=null>\n[pid=2352] starting temporary directories cleanup",
-                    "stack": "Error: browser.newContext: Test ended.\nBrowser logs:\n\n<launching> C:\\Users\\admin\\AppData\\Local\\ms-playwright\\firefox-1440\\firefox\\firefox.exe -no-remote -wait-for-browser -foreground -profile C:\\Users\\admin\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-tGpG6i -juggler-pipe -silent\n<launched> pid=2352\n[pid=2352][out] console.warn: services.settings: Ignoring preference override of remote settings server\n[pid=2352][out] console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment\n[pid=2352][out] console.error: ({})\n[pid=2352][out] \n[pid=2352][out] Juggler listening to the pipe\n[pid=2352][out] console.error: \"Warning: unrecognized command line flag\" \"-foreground\"\n[pid=2352] <gracefully close start>\n[pid=2352] <process did exit: exitCode=3221225786, signal=null>\n[pid=2352] starting temporary directories cleanup"
-                  },
-                  "errors": [
-                    {
-                      "message": "Error: browser.newContext: Test ended.\nBrowser logs:\n\n<launching> C:\\Users\\admin\\AppData\\Local\\ms-playwright\\firefox-1440\\firefox\\firefox.exe -no-remote -wait-for-browser -foreground -profile C:\\Users\\admin\\AppData\\Local\\Temp\\playwright_firefoxdev_profile-tGpG6i -juggler-pipe -silent\n<launched> pid=2352\n[pid=2352][out] console.warn: services.settings: Ignoring preference override of remote settings server\n[pid=2352][out] console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment\n[pid=2352][out] console.error: ({})\n[pid=2352][out] \n[pid=2352][out] Juggler listening to the pipe\n[pid=2352][out] console.error: \"Warning: unrecognized command line flag\" \"-foreground\"\n[pid=2352] <gracefully close start>\n[pid=2352] <process did exit: exitCode=3221225786, signal=null>\n[pid=2352] starting temporary directories cleanup"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 14818,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-01T11:55:25.558Z",
-                  "attachments": []
+                  "startTime": "2024-04-01T12:01:41.393Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\playwright\\test-results\\tests-fb-fb-login-firefox\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
-              "status": "skipped"
+              "status": "expected"
             }
           ],
-          "id": "f3d8c666708db12e5d3c-29090f7e03c0a1370a7a",
-          "file": "pomtest/shopnowusingJSON.test.ts",
-          "line": 32,
+          "id": "8aa9c8eef4d80d8f8064-0161af9258c6128ff9ca",
+          "file": "tests/fb.test.ts",
+          "line": 3,
           "column": 5
-        },
+        }
+      ]
+    },
+    {
+      "title": "tests\\login.test.ts",
+      "file": "tests/login.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
         {
-          "title": "test3",
+          "title": "loginpage",
           "ok": true,
           "tags": [],
           "tests": [
@@ -251,8 +164,20 @@
               "expectedStatus": "passed",
               "projectId": "chrome",
               "projectName": "chrome",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 11319,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-04-01T12:01:29.524Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             },
             {
               "timeout": 300000,
@@ -260,13 +185,25 @@
               "expectedStatus": "passed",
               "projectId": "firefox",
               "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 14441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-04-01T12:01:48.401Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
             }
           ],
-          "id": "f3d8c666708db12e5d3c-8154ca746b2cc5d06fe8",
-          "file": "pomtest/shopnowusingJSON.test.ts",
-          "line": 43,
+          "id": "ef85df6096d4739f2c52-58a36cac119eb6e18a63",
+          "file": "tests/login.test.ts",
+          "line": 5,
           "column": 5
         }
       ]
@@ -274,11 +211,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-01T11:55:15.756Z",
-    "duration": 13190.331999999999,
-    "expected": 0,
-    "skipped": 5,
-    "unexpected": 1,
+    "startTime": "2024-04-01T12:01:28.850Z",
+    "duration": 34008.346,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
     "flaky": 0
   }
 }

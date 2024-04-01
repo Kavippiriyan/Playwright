@@ -13,5 +13,7 @@ test("loginpage", async () => {
     await page.click("'Movies'")
     await page.waitForTimeout(5000)
     await page.close()
+    await context.close();
+    await browser.close();
 
 })
