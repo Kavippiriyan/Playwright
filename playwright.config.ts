@@ -30,7 +30,8 @@ const config: PlaywrightTestConfig = {
 
   // for page object model
 
-  testMatch: ["pomtest/Shopnow.test.ts"],
+  // testMatch: ["pomtest/Shopnow.test.ts"],
+  testMatch: ["Fixture/fixture.test.ts"],
   use:
   {
     baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
