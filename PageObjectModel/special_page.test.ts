@@ -12,6 +12,11 @@ export default class Special_page {
     }
 
     async shopnow() {
-        await this.page.click(("//a[@class='btn btn-lg btn-outline-primary ml-lg-auto flex-shrink-0']"))
+        await Promise.all(
+            [
+                this.page.waitForNavigation({ waitUntil: "networkidle" }),
+                await this.page.click(("//a[@class='btn btn-lg btn-outline-primary ml-lg-auto flex-shrink-0']"))
+            ]
+        )
     }
 }
