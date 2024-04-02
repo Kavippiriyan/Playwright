@@ -5,24 +5,24 @@ import { devices } from "@playwright/test"
 const config: PlaywrightTestConfig = {
 
 
-  projects: [
-    {
-      name: "chrome",
-      use: {
-        ...devices["Desktop Chrome"]
-      }
-    },
-     {
-      name:"firefox",
-      use:
-      {
-        ...devices["Desktop Firefox"]
-      }
-     },
-  ],
+  // projects: [
+  //   {
+  //     name: "chrome",
+  //     use: {
+  //       ...devices["Desktop Chrome"]
+  //     }
+  //   },
+  // {
+  //   name: "firefox",
+  //   use:
+  //   {
+  //     ...devices["Desktop Firefox"]
+  //   }
+  // },
+  // ],
 
 
-  testMatch:["tests/login.test.ts","tests/fb.test.ts"],
+  // testMatch: ["tests/login.test.ts"],//,"tests/fb.test.ts"],
   // testMatch:["tests/fb.test.ts"],
   // testMatch:["tests/flipkart.test.ts"],
   // testMatch: ["tests/records.test.ts"],
@@ -52,6 +52,7 @@ const config: PlaywrightTestConfig = {
   // for page object model
 
   // testMatch: ["pomtest/Shopnow.test.ts"],
+  testMatch: ["pomtest/Shopnowusingfixture.test.ts"],
   // testMatch: ["Fixture/fixture.test.ts"],
   // testMatch: ["pomtest/shopnowusingJSON.test.ts"],
   use:

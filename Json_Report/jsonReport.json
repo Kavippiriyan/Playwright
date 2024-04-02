@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -42,27 +42,12 @@
         "outputDir": "C:/playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "chrome",
-        "name": "chrome",
+        "id": "",
+        "name": "",
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/login.test.ts",
-          "tests/fb.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "C:/playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "tests/login.test.ts",
-          "tests/fb.test.ts"
+          "pomtest/Shopnowusingfixture.test.ts"
         ],
         "timeout": 300000
       }
@@ -75,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests\\fb.test.ts",
-      "file": "tests/fb.test.ts",
+      "title": "pomtest\\Shopnowusingfixture.test.ts",
+      "file": "pomtest/Shopnowusingfixture.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "fb login",
+          "title": "test1 Register",
           "ok": true,
           "tags": [],
           "tests": [
@@ -89,50 +74,23 @@
               "timeout": 300000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chrome",
-              "projectName": "chrome",
+              "projectId": "",
+              "projectName": "",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 17761,
+                  "duration": 26111,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-01T12:01:29.518Z",
+                  "startTime": "2024-04-02T05:50:12.411Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-fb-fb-login-chrome\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 14818,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-01T12:01:41.393Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\tests-fb-fb-login-firefox\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\pomtest-Shopnowusingfixture-test1-Register\\test-finished-1.png"
                     }
                   ]
                 }
@@ -140,21 +98,13 @@
               "status": "expected"
             }
           ],
-          "id": "8aa9c8eef4d80d8f8064-0161af9258c6128ff9ca",
-          "file": "tests/fb.test.ts",
-          "line": 3,
+          "id": "8112d618ad5bbab93779-9ed8b98824199c386e8e",
+          "file": "pomtest/Shopnowusingfixture.test.ts",
+          "line": 10,
           "column": 5
-        }
-      ]
-    },
-    {
-      "title": "tests\\login.test.ts",
-      "file": "tests/login.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
+        },
         {
-          "title": "loginpage",
+          "title": "test2 Login",
           "ok": true,
           "tags": [],
           "tests": [
@@ -162,48 +112,71 @@
               "timeout": 300000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chrome",
-              "projectName": "chrome",
+              "projectId": "",
+              "projectName": "",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11319,
+                  "duration": 14499,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-01T12:01:29.524Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            },
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 14441,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-01T12:01:48.401Z",
-                  "attachments": []
+                  "startTime": "2024-04-02T05:50:38.528Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\playwright\\test-results\\pomtest-Shopnowusingfixture-test2-Login\\test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "ef85df6096d4739f2c52-58a36cac119eb6e18a63",
-          "file": "tests/login.test.ts",
-          "line": 5,
+          "id": "8112d618ad5bbab93779-0ced44cf8848f161a950",
+          "file": "pomtest/Shopnowusingfixture.test.ts",
+          "line": 27,
+          "column": 5
+        },
+        {
+          "title": "test3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 28700,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-04-02T05:50:53.030Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\playwright\\test-results\\pomtest-Shopnowusingfixture-test3\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8112d618ad5bbab93779-1c011f0d2b7d33e5a719",
+          "file": "pomtest/Shopnowusingfixture.test.ts",
+          "line": 38,
           "column": 5
         }
       ]
@@ -211,9 +184,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-01T12:01:28.850Z",
-    "duration": 34008.346,
-    "expected": 4,
+    "startTime": "2024-04-02T05:50:11.595Z",
+    "duration": 70182.21100000001,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
