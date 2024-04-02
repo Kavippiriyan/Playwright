@@ -55,6 +55,11 @@ const config: PlaywrightTestConfig = {
   // testMatch: ["pomtest/Shopnowusingfixture.test.ts"],
   // testMatch: ["Fixture/fixture.test.ts"],
   // testMatch: ["pomtest/shopnowusingJSON.test.ts"],
+
+
+  //for Automation Excersise 
+
+  testMatch: ["Automation Excersise/test/testcase.test.ts"],
   use:
   {
     // baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",

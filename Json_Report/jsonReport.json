@@ -47,7 +47,7 @@
         "testDir": "C:/playwright",
         "testIgnore": [],
         "testMatch": [
-          "pomtest/Shopnowusingfixture.test.ts"
+          "Automation Excersise/test/testcase.test.ts"
         ],
         "timeout": 300000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "pomtest\\Shopnowusingfixture.test.ts",
-      "file": "pomtest/Shopnowusingfixture.test.ts",
+      "title": "Automation Excersise\\test\\testcase.test.ts",
+      "file": "Automation Excersise/test/testcase.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "test1 Register",
+          "title": "register",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,17 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 26111,
+                  "duration": 12643,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-02T05:50:12.411Z",
+                  "startTime": "2024-04-02T10:57:57.823Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnowusingfixture-test1-Register\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-register\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-register\\video.webm"
                     }
                   ]
                 }
@@ -98,85 +103,9 @@
               "status": "expected"
             }
           ],
-          "id": "8112d618ad5bbab93779-9ed8b98824199c386e8e",
-          "file": "pomtest/Shopnowusingfixture.test.ts",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "test2 Login",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 14499,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-02T05:50:38.528Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnowusingfixture-test2-Login\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "8112d618ad5bbab93779-0ced44cf8848f161a950",
-          "file": "pomtest/Shopnowusingfixture.test.ts",
-          "line": 27,
-          "column": 5
-        },
-        {
-          "title": "test3",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 300000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 28700,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-02T05:50:53.030Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\pomtest-Shopnowusingfixture-test3\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "8112d618ad5bbab93779-1c011f0d2b7d33e5a719",
-          "file": "pomtest/Shopnowusingfixture.test.ts",
-          "line": 38,
+          "id": "6201162bbc012e33cb14-a700f591801cd7bc6822",
+          "file": "Automation Excersise/test/testcase.test.ts",
+          "line": 7,
           "column": 5
         }
       ]
@@ -184,9 +113,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-02T05:50:11.595Z",
-    "duration": 70182.21100000001,
-    "expected": 3,
+    "startTime": "2024-04-02T10:57:57.046Z",
+    "duration": 14356.18,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
