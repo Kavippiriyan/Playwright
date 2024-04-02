@@ -36,14 +36,14 @@ const Password = "password"
 
 // })
 
-test("test3", async ({ page, baseURL }) => {
-    const login = new Login(page);
-    const home = new Home(page)
-    const specialpage = new Special_page(page)
-    await page.goto(`${baseURL}route=account/login`)
-    await login.login(Email, Password);
-    await home.special_page()
-    await specialpage.continue_shopnow();
-    await specialpage.shopnow();
+// test("test3", async ({ page, baseURL }) => {
+//     const login = new Login(page);
+//     const home = new Home(page)
+//     const specialpage = new Special_page(page)
+//     await page.goto(`${baseURL}route=account/login`)
+//     await login.login(Email, Password);
+//     await home.special_page()
+//     await specialpage.continue_shopnow();
+//     await specialpage.shopnow();
 
-})
+// })
