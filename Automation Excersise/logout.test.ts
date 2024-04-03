@@ -1,7 +1,6 @@
-
 import { Page, expect } from "@playwright/test"
 
-export default class Login {
+export default class Logout {
 
 
     constructor(public page: Page) {
@@ -41,17 +40,19 @@ export default class Login {
         this.page.locator("//button[text()='Login']").click()
 
     }
+
     async isusernameVisible() {
         expect(await this.page.locator("//b[text()='lion']").isVisible())
     }
-    async DeleteAccount() {
-        await this.page.locator("//a[text()=' Delete Account']").click();
-    }
-    async AccountDeletedisVisible() {
-        expect(await this.page.locator("//b[text()='Account Deleted!']")).toHaveText("Account Deleted!");
-    }
-    async Error_message() {
-        expect(await this.page.locator("//p[text()='Your email or password is incorrect!']").isVisible());
-    }
+    async logout() {
 
+
+        this.page.locator("//a[text()=' Logout']").click()
+
+    }
+    async signuploginVisible() {
+        await this.page.locator("//a[text()=' Signup / Login']").isVisible();
+    }
 }
+
+

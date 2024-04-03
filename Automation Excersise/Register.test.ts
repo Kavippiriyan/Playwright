@@ -129,4 +129,7 @@ export default class Register {
      async continue_Afterdelete_GoHomepage() {
           expect(await this.page.locator("//a[text()='Continue']").click());
      }
+     async Error_message_for_Register() {
+          expect(await this.page.locator("//p[text()='Email Address already exist!']").isVisible())
+     }
 }

@@ -66,8 +66,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "login test2",
-          "ok": false,
+          "title": "Email alreday exist  test5",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,52 +79,33 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 87557,
-                  "error": {
-                    "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://automationexercise.com/\", waiting until \"load\"\u001b[22m\n",
-                    "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://automationexercise.com/\", waiting until \"load\"\u001b[22m\n\n    at C:\\playwright\\Automation Excersise\\test\\testcase.test.ts:46:16",
-                    "location": {
-                      "file": "C:\\playwright\\Automation Excersise\\test\\testcase.test.ts",
-                      "column": 16,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m test(\u001b[32m\"login test2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m baseURL }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLogin\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     login\u001b[33m.\u001b[39misHomePageVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     login\u001b[33m.\u001b[39msignuplogin()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     login\u001b[33m.\u001b[39m\u001b[33mEmailAddress\u001b[39m(\u001b[32m\"lion@gmail.com\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\playwright\\Automation Excersise\\test\\testcase.test.ts",
-                        "column": 16,
-                        "line": 46
-                      },
-                      "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- navigating to \"https://automationexercise.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 44 |\u001b[39m test(\u001b[32m\"login test2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m baseURL }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLogin\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m`${baseURL}`\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     login\u001b[33m.\u001b[39misHomePageVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m     login\u001b[33m.\u001b[39msignuplogin()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m     login\u001b[33m.\u001b[39m\u001b[33mEmailAddress\u001b[39m(\u001b[32m\"lion@gmail.com\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\playwright\\Automation Excersise\\test\\testcase.test.ts:46:16\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 8513,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-02T12:15:35.233Z",
+                  "startTime": "2024-04-02T13:38:28.752Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-Email-alreday-exist-test5\\test-finished-1.png"
+                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test2\\video.webm"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-Email-alreday-exist-test5\\video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\playwright\\Automation Excersise\\test\\testcase.test.ts",
-                    "column": 16,
-                    "line": 46
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "6201162bbc012e33cb14-d65ac5591223743ecd04",
+          "id": "6201162bbc012e33cb14-85296251944963fa8250",
           "file": "Automation Excersise/test/testcase.test.ts",
-          "line": 44,
+          "line": 87,
           "column": 5
         }
       ]
@@ -132,11 +113,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-02T12:15:34.461Z",
-    "duration": 89265.52699999999,
-    "expected": 0,
+    "startTime": "2024-04-02T13:38:27.896Z",
+    "duration": 10121.527,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
