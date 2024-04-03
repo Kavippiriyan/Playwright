@@ -1,14 +1,14 @@
 import { Page, expect } from "@playwright/test";
 
 
-export default class Contact {
+export default class ContactUs {
     constructor(public page: Page) {
 
     }
     async isHomePageVisible() {
         expect(await this.page.locator("//a[text()=' Home']").isVisible());
     }
-    async signuplogin() {
+    async clickcontactus() {
         await this.page.click("//a[text()=' Contact us']")
     }
 
@@ -52,6 +52,27 @@ export default class Contact {
         uploadfiles.setFiles("images_for_playwright/Krishna.png")
     }
     async Submit() {
-        await this.page.click("//input[@name='submit']")
+
+        this.page.click("//input[@value='Submit']")
+    }
+
+    async alert() {
+        this.page.on("dialog", async (alert) => {
+            const alertmsg = alert.message();
+            console.log(alertmsg);
+
+            alert.accept();
+
+        })
+    }
+    async submittedmsg() {
+        expect(await this.page.locator("(//div[text()='Success! Your details have been submitted successfully.'])[1]").isVisible());
+    }
+
+    async Homebutton() {
+        await this.page.click("//span[text()=' Home']")
+    }
+    async ishomepage() {
+        expect(this.page.url()).toEqual("https://automationexercise.com/")
     }
 }

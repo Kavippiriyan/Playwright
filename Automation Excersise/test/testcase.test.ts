@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test"
 import Register from "../Register.test";
 import Login from "../login.test";
 import Logout from "../logout.test";
+import ContactUs from "../contactusform.test";
 
 
 // test("register test1", async ({ page, baseURL }) => {
@@ -98,3 +99,20 @@ import Logout from "../logout.test";
 //     await register.Error_message_for_Register()
 
 // })
+
+test("ContactUs test4", async ({ page, baseURL }) => {
+    const contactus = new ContactUs(page);
+    await page.goto(`${baseURL}`);
+    await contactus.isHomePageVisible();
+    await contactus.clickcontactus();
+    await contactus.name("lion");
+    await contactus.EmailAddress("lion@gmail.com");
+    await contactus.subject("Greet");
+    await contactus.message("Good Morning!");
+    await contactus.uploadfile();
+    await contactus.Submit();
+    await contactus.alert();
+    await contactus.submittedmsg();
+    await contactus.Homebutton();
+    await contactus.ishomepage();
+})
