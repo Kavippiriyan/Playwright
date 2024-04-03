@@ -41,4 +41,17 @@ export default class Contact {
 
         await email_locate.fill(email)
     }
+
+    async uploadfile() {
+        const [uploadfiles] = await Promise.all(
+            [
+                this.page.waitForEvent("filechooser"),
+                this.page.click("input[type='file']")
+            ]
+        )
+        uploadfiles.setFiles("images_for_playwright/Krishna.png")
+    }
+    async Submit() {
+        await this.page.click("//input[@name='submit']")
+    }
 }
