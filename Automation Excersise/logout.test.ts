@@ -7,7 +7,7 @@ export default class Logout {
 
     }
     async isHomePageVisible() {
-        expect(await this.page.locator("//a[text()=' Home']").isVisible());
+        expect(await this.page.locator("//a[text()=' Home']")).toContainText("Home")
     }
 
 
@@ -24,6 +24,9 @@ export default class Logout {
         const email_locate = await this.page.locator("(//input[@placeholder='Email Address'])[1]")
 
         await email_locate.fill(email)
+
+
+
 
 
     }

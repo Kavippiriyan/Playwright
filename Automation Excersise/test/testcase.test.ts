@@ -4,6 +4,8 @@ import Register from "../Register.test";
 import Login from "../login.test";
 import Logout from "../logout.test";
 import ContactUs from "../contactusform.test";
+import TestcasePage from "../testcasepage.test";
+import ProductDetailsPage from "./productdetail.test";
 
 
 // test("register test1", async ({ page, baseURL }) => {
@@ -100,19 +102,39 @@ import ContactUs from "../contactusform.test";
 
 // })
 
-test("ContactUs test4", async ({ page, baseURL }) => {
-    const contactus = new ContactUs(page);
+// test("ContactUs test6", async ({ page, baseURL }) => {
+//     const contactus = new ContactUs(page);
+//     await page.goto(`${baseURL}`);
+//     await contactus.isHomePageVisible();
+//     await contactus.clickcontactus();
+//     await contactus.name("lion");
+//     await contactus.EmailAddress("lion@gmail.com");
+//     await contactus.subject("Greet");
+//     await contactus.message("Good Morning!");
+//     await contactus.uploadfile();
+//     await contactus.Submit();
+//     await contactus.alert();
+//     await contactus.submittedmsg();
+//     await contactus.Homebutton();
+//     await contactus.ishomepage();
+// })
+
+
+// test("logout test4", async ({ page, baseURL }) => {
+//     const testcasepage = new TestcasePage(page);
+//     await page.goto(`${baseURL}`);
+//     await testcasepage.isHomePageVisible();
+//     await testcasepage.testcaselink();
+//     await testcasepage.testcasepage();
+
+// })
+test("login test2", async ({ page, baseURL }) => {
+    const productdetail = new ProductDetailsPage(page);
     await page.goto(`${baseURL}`);
-    await contactus.isHomePageVisible();
-    await contactus.clickcontactus();
-    await contactus.name("lion");
-    await contactus.EmailAddress("lion@gmail.com");
-    await contactus.subject("Greet");
-    await contactus.message("Good Morning!");
-    await contactus.uploadfile();
-    await contactus.Submit();
-    await contactus.alert();
-    await contactus.submittedmsg();
-    await contactus.Homebutton();
-    await contactus.ishomepage();
+    await productdetail.isHomePageVisible();
+    await productdetail.productdetailslink()
+    await productdetail.productpagedetailsisvisible()
+    await productdetail.clickviewproduct()
+    await productdetail.productinformationvisible()
+
 })

@@ -6,7 +6,7 @@ export default class Register {
      constructor(public page: Page) {
      }
      async isHomePageVisible() {
-          expect(await this.page.locator("//a[text()=' Home']").isVisible());
+          expect(await this.page.locator("//a[text()=' Home']")).toContainText("Home")
      }
 
      async signuplogin() {
@@ -35,7 +35,7 @@ export default class Register {
      }
 
      async isvisibleEnteraccountinformation() {
-          await this.page.locator("//b[text()='Enter Account Information']").isVisible();
+          expect(await this.page.locator("//b[text()='Enter Account Information']")).toContainText("Enter Account Information")
      }
      async title() {
           await this.page.locator("//div[@id='uniform-id_gender1']").check()
@@ -110,26 +110,27 @@ export default class Register {
 
      }
      async isVisibleAccountcreated() {
-          await this.page.locator("//b[text()='Account Created!']").isVisible();
+          expect(await this.page.locator("//b[text()='Account Created!']")).toContainText("Account Created!")
      }
 
      async click_continue_goHome() {
           await this.page.locator("//a[text()='Continue']").click();
      }
      async isusernameVisible() {
-          expect(await this.page.locator("//b[text()='lion']")).toHaveText("lion")
+          expect(await this.page.locator("//b[text()='lion']")).toContainText("lion")
      }
 
      async DeleteAccount() {
           await this.page.locator("//a[text()=' Delete Account']").click();
      }
      async AccountDeletedisVisible() {
-          expect(await this.page.locator("//b[text()='Account Deleted!']")).toHaveText("Account Deleted!");
+          expect(await this.page.locator("//b[text()='Account Deleted!']")).toContainText("Account Deleted!")
      }
      async continue_Afterdelete_GoHomepage() {
           expect(await this.page.locator("//a[text()='Continue']").click());
      }
      async Error_message_for_Register() {
-          expect(await this.page.locator("//p[text()='Email Address already exist!']").isVisible())
+          expect(await this.page.locator("//p[text()='Email Address already exist!']")).toContainText("Email Address already exist!")
      }
+}
 }

@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "ContactUs test4",
+          "title": "login test2",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,26 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7569,
+                  "duration": 10431,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Press OK to proceed!\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-03T06:53:46.393Z",
+                  "startTime": "2024-04-03T07:51:33.424Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-ContactUs-test4\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test2\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-ContactUs-test4\\video.webm"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test2\\video.webm"
                     }
                   ]
                 }
@@ -107,9 +103,9 @@
               "status": "expected"
             }
           ],
-          "id": "6201162bbc012e33cb14-8edc88f3ebf1bc8b01ec",
+          "id": "6201162bbc012e33cb14-d65ac5591223743ecd04",
           "file": "Automation Excersise/test/testcase.test.ts",
-          "line": 103,
+          "line": 131,
           "column": 5
         }
       ]
@@ -117,8 +113,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-03T06:53:45.712Z",
-    "duration": 9094.14,
+    "startTime": "2024-04-03T07:51:32.650Z",
+    "duration": 12104.066,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

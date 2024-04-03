@@ -6,14 +6,14 @@ export default class ContactUs {
 
     }
     async isHomePageVisible() {
-        expect(await this.page.locator("//a[text()=' Home']").isVisible());
+        expect(await this.page.locator("//a[text()=' Home']")).toContainText("Home")
     }
     async clickcontactus() {
         await this.page.click("//a[text()=' Contact us']")
     }
 
     async GETINTOUCHisvisible() {
-        expect(await this.page.locator("//h2[text()='Get In Touch']").isVisible());
+        expect(await this.page.locator("//h2[text()='Get In Touch']")).toContainText("Get In Touch");
     }
 
 
@@ -66,7 +66,7 @@ export default class ContactUs {
         })
     }
     async submittedmsg() {
-        expect(await this.page.locator("(//div[text()='Success! Your details have been submitted successfully.'])[1]").isVisible());
+        expect(await this.page.locator("(//div[text()='Success! Your details have been submitted successfully.'])[1]")).toContainText("Success! Your details have been submitted successfully.");
     }
 
     async Homebutton() {
@@ -76,3 +76,4 @@ export default class ContactUs {
         expect(this.page.url()).toEqual("https://automationexercise.com/")
     }
 }
+
