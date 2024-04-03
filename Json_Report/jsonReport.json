@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "login test8",
+          "title": "login test9",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,22 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 7202,
+                  "duration": 8338,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-03T10:29:06.035Z",
+                  "startTime": "2024-04-03T10:36:43.927Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test8\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test9\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test8\\video.webm"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test9\\video.webm"
                     }
                   ]
                 }
@@ -103,9 +103,9 @@
               "status": "expected"
             }
           ],
-          "id": "6201162bbc012e33cb14-6b1b3e6ec3ea770a77eb",
+          "id": "6201162bbc012e33cb14-a83d1d72aaad914f5e09",
           "file": "Automation Excersise/test/testcase.test.ts",
-          "line": 143,
+          "line": 156,
           "column": 5
         }
       ]
@@ -113,8 +113,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-03T10:29:05.225Z",
-    "duration": 8847.554,
+    "startTime": "2024-04-03T10:36:43.125Z",
+    "duration": 10283.976999999999,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

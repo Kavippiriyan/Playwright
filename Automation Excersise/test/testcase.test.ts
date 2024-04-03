@@ -7,6 +7,7 @@ import ContactUs from "../contactusform.test";
 import TestcasePage from "../testcasepage.test";
 import ProductDetailsPage from "../productdetail.test";
 import Subscription from "../subscription.test";
+import CartSubscription from "../cartsubcription.test";
 
 
 // test("register test1", async ({ page, baseURL }) => {
@@ -140,14 +141,27 @@ import Subscription from "../subscription.test";
 
 // })
 
-test("login test8", async ({ page, baseURL }) => {
-    const subscription = new Subscription(page);
+// test("login test9", async ({ page, baseURL }) => {
+//     const subscription = new Subscription(page);
+//     await page.goto(`${baseURL}`);
+//     await subscription.isHomePageVisible();
+//     await subscription.scroll_tosubscription()
+//     await subscription.fillsubscribeemail()
+//     await page.waitForTimeout(2000);
+//     await subscription.clicktosubscribe();
+//     await subscription.subscribedmsg();
+
+// })
+
+test("login test9", async ({ page, baseURL }) => {
+    const cartsubscription = new CartSubscription(page);
     await page.goto(`${baseURL}`);
-    await subscription.isHomePageVisible();
-    await subscription.scroll_tosubscription()
-    await subscription.fillsubscribeemail()
+    await cartsubscription.isHomePageVisible();
+    await cartsubscription.click_cart()
+    await cartsubscription.scroll_tosubscription()
+    await cartsubscription.fillsubscribeemail()
     await page.waitForTimeout(2000);
-    await subscription.clicktosubscribe();
-    await subscription.subscribedmsg();
+    await cartsubscription.clicktosubscribe();
+    await cartsubscription.subscribedmsg();
 
 })
