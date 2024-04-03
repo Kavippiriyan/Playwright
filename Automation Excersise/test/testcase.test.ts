@@ -5,7 +5,8 @@ import Login from "../login.test";
 import Logout from "../logout.test";
 import ContactUs from "../contactusform.test";
 import TestcasePage from "../testcasepage.test";
-import ProductDetailsPage from "./productdetail.test";
+import ProductDetailsPage from "../productdetail.test";
+import Subscription from "../subscription.test";
 
 
 // test("register test1", async ({ page, baseURL }) => {
@@ -120,7 +121,7 @@ import ProductDetailsPage from "./productdetail.test";
 // })
 
 
-// test("logout test4", async ({ page, baseURL }) => {
+// test("logout test7", async ({ page, baseURL }) => {
 //     const testcasepage = new TestcasePage(page);
 //     await page.goto(`${baseURL}`);
 //     await testcasepage.isHomePageVisible();
@@ -128,13 +129,25 @@ import ProductDetailsPage from "./productdetail.test";
 //     await testcasepage.testcasepage();
 
 // })
-test("login test2", async ({ page, baseURL }) => {
-    const productdetail = new ProductDetailsPage(page);
+// test("login test8", async ({ page, baseURL }) => {
+//     const productdetail = new ProductDetailsPage(page);
+//     await page.goto(`${baseURL}`);
+//     await productdetail.isHomePageVisible();
+//     await productdetail.productdetailslink()
+//     await productdetail.productpagedetailsisvisible()
+//     await productdetail.clickviewproduct()
+//     await productdetail.productinformationvisible()
+
+// })
+
+test("login test8", async ({ page, baseURL }) => {
+    const subscription = new Subscription(page);
     await page.goto(`${baseURL}`);
-    await productdetail.isHomePageVisible();
-    await productdetail.productdetailslink()
-    await productdetail.productpagedetailsisvisible()
-    await productdetail.clickviewproduct()
-    await productdetail.productinformationvisible()
+    await subscription.isHomePageVisible();
+    await subscription.scroll_tosubscription()
+    await subscription.fillsubscribeemail()
+    await page.waitForTimeout(2000);
+    await subscription.clicktosubscribe();
+    await subscription.subscribedmsg();
 
 })
