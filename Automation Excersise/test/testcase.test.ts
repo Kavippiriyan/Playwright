@@ -8,6 +8,7 @@ import TestcasePage from "../testcasepage.test";
 import ProductDetailsPage from "../productdetail.test";
 import Subscription from "../subscription.test";
 import CartSubscription from "../cartsubcription.test";
+import AddCart from "../addproduct.test";
 
 
 // test("register test1", async ({ page, baseURL }) => {
@@ -153,15 +154,25 @@ import CartSubscription from "../cartsubcription.test";
 
 // })
 
-test("login test9", async ({ page, baseURL }) => {
-    const cartsubscription = new CartSubscription(page);
+// test("login test10", async ({ page, baseURL }) => {
+//     const cartsubscription = new CartSubscription(page);
+//     await page.goto(`${baseURL}`);
+//     await cartsubscription.isHomePageVisible();
+//     await cartsubscription.click_cart()
+//     await cartsubscription.scroll_tosubscription()
+//     await cartsubscription.fillsubscribeemail()
+//     await page.waitForTimeout(2000);
+//     await cartsubscription.clicktosubscribe();
+//     await cartsubscription.subscribedmsg();
+
+// })
+
+test("login test11", async ({ page, baseURL }) => {
+    const addCart = new AddCart(page);
     await page.goto(`${baseURL}`);
-    await cartsubscription.isHomePageVisible();
-    await cartsubscription.click_cart()
-    await cartsubscription.scroll_tosubscription()
-    await cartsubscription.fillsubscribeemail()
-    await page.waitForTimeout(2000);
-    await cartsubscription.clicktosubscribe();
-    await cartsubscription.subscribedmsg();
+    await addCart.isHomePageVisible();
+    await addCart.productdetailslink();
+    await addCart.Mousehoverandclick();
+    await addCart.validatingthecarts();
 
 })
