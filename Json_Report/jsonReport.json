@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "login test11",
+          "title": "seachproduct test13",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,47 +80,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9520,
+                  "duration": 10454,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[33m500\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m400\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m1\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m1\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m500\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[33m400\u001b[39m\n"
-                    },
-                    {
-                      "text": "dress1 verified\n"
-                    },
-                    {
-                      "text": "dress2 verified\n"
+                      "text": "Test case is completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-03T13:00:02.071Z",
+                  "startTime": "2024-04-04T04:41:02.909Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test11\\test-finished-1.png"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-seachproduct-test13\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-login-test11\\video.webm"
+                      "path": "C:\\playwright\\test-results\\Automation Excersise-test-testcase-seachproduct-test13\\video.webm"
                     }
                   ]
                 }
@@ -128,9 +107,9 @@
               "status": "expected"
             }
           ],
-          "id": "6201162bbc012e33cb14-12462488f6d93c7b70a4",
+          "id": "6201162bbc012e33cb14-f60d4816b7c8a897584e",
           "file": "Automation Excersise/test/testcase.test.ts",
-          "line": 170,
+          "line": 195,
           "column": 5
         }
       ]
@@ -138,8 +117,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-03T13:00:01.293Z",
-    "duration": 11281.953,
+    "startTime": "2024-04-04T04:41:02.240Z",
+    "duration": 11852.238,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

@@ -9,7 +9,8 @@ import ProductDetailsPage from "../productdetail.test";
 import Subscription from "../subscription.test";
 import CartSubscription from "../cartsubcription.test";
 import AddCart from "../addproduct.test";
-
+import ProductQuantity from "../productquantity.test";
+import SearchProduct from "../search_product.test";
 
 // test("register test1", async ({ page, baseURL }) => {
 
@@ -123,7 +124,7 @@ import AddCart from "../addproduct.test";
 // })
 
 
-// test("logout test7", async ({ page, baseURL }) => {
+// test("testcasepage test7", async ({ page, baseURL }) => {
 //     const testcasepage = new TestcasePage(page);
 //     await page.goto(`${baseURL}`);
 //     await testcasepage.isHomePageVisible();
@@ -131,7 +132,7 @@ import AddCart from "../addproduct.test";
 //     await testcasepage.testcasepage();
 
 // })
-// test("login test8", async ({ page, baseURL }) => {
+// test("productdetail test8", async ({ page, baseURL }) => {
 //     const productdetail = new ProductDetailsPage(page);
 //     await page.goto(`${baseURL}`);
 //     await productdetail.isHomePageVisible();
@@ -142,7 +143,7 @@ import AddCart from "../addproduct.test";
 
 // })
 
-// test("login test9", async ({ page, baseURL }) => {
+// test("subscription test9", async ({ page, baseURL }) => {
 //     const subscription = new Subscription(page);
 //     await page.goto(`${baseURL}`);
 //     await subscription.isHomePageVisible();
@@ -154,7 +155,7 @@ import AddCart from "../addproduct.test";
 
 // })
 
-// test("login test10", async ({ page, baseURL }) => {
+// test("cartsubscription test10", async ({ page, baseURL }) => {
 //     const cartsubscription = new CartSubscription(page);
 //     await page.goto(`${baseURL}`);
 //     await cartsubscription.isHomePageVisible();
@@ -167,12 +168,37 @@ import AddCart from "../addproduct.test";
 
 // })
 
-test("login test11", async ({ page, baseURL }) => {
-    const addCart = new AddCart(page);
-    await page.goto(`${baseURL}`);
-    await addCart.isHomePageVisible();
-    await addCart.productdetailslink();
-    await addCart.Mousehoverandclick();
-    await addCart.validatingthecarts();
+// test("addCart test11", async ({ page, baseURL }) => {
+//     const addCart = new AddCart(page);
+//     await page.goto(`${baseURL}`);
+//     await addCart.isHomePageVisible();
+//     await addCart.productdetailslink();
+//     await addCart.Mousehoverandclick();
+//     await addCart.validatingthecarts();
 
-})
+// })
+
+// test("productquantity test12", async ({ page, baseURL }) => {
+//     const productquantity = new ProductQuantity(page);
+//     await page.goto(`${baseURL}`);
+//     await productquantity.isHomePageVisible();
+//     await productquantity.productdetailslink();
+//     await productquantity.clickviewproduct();
+//     await productquantity.fillquantity();
+//     await productquantity.addcart();
+//     await productquantity.quantity_verification();
+
+
+// })
+
+
+// test("seachproduct test13", async ({ page, baseURL }) => {
+//     const searchProduct = new SearchProduct(page)
+//     await page.goto(`${baseURL}`)
+//     await searchProduct.isHomePageVisible();
+//     await searchProduct.productdetailslink();
+//     await searchProduct.allproductspage();
+//     await searchProduct.searchbox();
+//     await searchProduct.searchedproducttextvisibility();
+//     await searchProduct.searchedProductVisibility();
+// })
